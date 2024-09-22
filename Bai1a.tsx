@@ -1,43 +1,38 @@
-import { Text, SafeAreaView, StyleSheet,Image ,View,Button,LinearGradient} from 'react-native';
-
+import { Text, SafeAreaView, StyleSheet,Image ,View,Button} from 'react-native';
+// import { LinearGradient } from 'react-native-linear-gradient';
+// import { LinearGradient } from 'expo-linear-gradient';
 // You can import supported modules from npm
 import { Card } from 'react-native-paper';
-import LinearGradient from 'react-native-linear-gradient';
+
 // or any files within the Snack
 import AssetExample from './components/AssetExample';
 
 const App = () => {
   return (
     <View style={style.bg_container}>
-      <LinearGradient
-        colors={['#C7F4F7', '#D1F4F6', '#E5F4F5', '#37D6F8', '#00CCF9']}
-        style={style.bg_container}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 0, y: 1 }}
-      >
-        <Text style={style.border_1}></Text>
-        <text style={style.title_Grow}>GROW <br/>YOUR BUSINESS</text>
-        <text style={style.text_content}>We will help you to grow your business using
-  online server</text>
-        <View style={style.flex_row}>
-          <Button
-            title="LOGIN"
-            buttonStyle={style.btn_login}
-            color="yellow"
-          />
-          <Button
-          title="SIGN UP"
+      <Text style={style.border_1}></Text>
+      <text style={style.title_Grow}>GROW <br/>YOUR BUSINESS</text>
+      <text style={style.text_content}>We will help you to grow your business using
+online server</text>
+      <View style={style.flex_row}>
+        <Button
+          title="LOGIN"
+          buttonStyle={style.btn_login}
           color="yellow"
-          />
-        </View>
-        <Text style={style.text_content_1}>HOW WE WORK?</Text>
-      </LinearGradient>
+        />
+        <Button
+        title="SIGN UP"
+        color="yellow"
+        />
+      </View>
+      <Text style={style.text_content_1}>HOW WE WORK?</Text>
     </View>
   );
 }
 
 const style = StyleSheet.create({
   bg_container: {
+
     height:640,
     width:360
   },
@@ -65,7 +60,7 @@ const style = StyleSheet.create({
     fontFamily:'roboto',
     textAlign:'center',
     width:300,
-    marginLeft:35,
+    marginLeft:15,
     marginTop:40,
     marginBottom:50
   },

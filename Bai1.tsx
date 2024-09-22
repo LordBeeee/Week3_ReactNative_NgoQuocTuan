@@ -58,7 +58,7 @@ const style = StyleSheet.create({
     fontFamily:'roboto',
     textAlign:'center',
     width:300,
-    marginLeft:35,
+    marginLeft:15,
     marginTop:50,
     marginBottom:50
   },
